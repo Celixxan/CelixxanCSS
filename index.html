@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <nav class="backdrop-blur-md bg-white/70 dark:bg-gray-800/70 fixed w-full top-0 z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-space-grotesk font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                    Futuristic
+                </h1>
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 pt-24">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="glass-card p-8 rounded-2xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="font-space-grotesk text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                        Welcome to the Future
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl font-inter">
+                        Experience the next generation of web design with our futuristic template. Clean lines, modern aesthetics, and cutting-edge features combine to create an unforgettable user experience.
+                    </p>
+                    <button class="neon-button">
+                        Explore More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-rocket text-2xl"></i>
+                    </div>
+                    <h3 class="font-space-grotesk text-xl font-bold mt-4 mb-2">Fast Performance</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Lightning-fast loading times and smooth animations.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-paint-brush text-2xl"></i>
+                    </div>
+                    <h3 class="font-space-grotesk text-xl font-bold mt-4 mb-2">Modern Design</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Clean, minimalist, and futuristic aesthetics.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-moon text-2xl"></i>
+                    </div>
+                    <h3 class="font-space-grotesk text-xl font-bold mt-4 mb-2">Dark Mode</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Seamless light and dark mode switching.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
